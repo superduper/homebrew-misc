@@ -7,6 +7,7 @@ class Cargo < Formula
   head "https://github.com/rust-lang/cargo.git"
 
   depends_on "rust"
+  depends_on "libgit2"
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
 
