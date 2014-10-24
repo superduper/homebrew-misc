@@ -6,7 +6,7 @@ class Cargo < Formula
   version "wip"
   head "https://github.com/rust-lang/cargo.git"
 
-  depends_on "rust"
+  depends_on "rust", "cmake"
 
   def install
     system "make", "PREFIX=#{prefix}"
