@@ -9,6 +9,7 @@ class Cargo < Formula
   depends_on "rust", "cmake"
 
   def install
+    system "./configure", "PREFIX=#{prefix}"
     system "make", "PREFIX=#{prefix}"
     system "make", "PREFIX=#{prefix}", "install"
   end
