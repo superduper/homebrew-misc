@@ -11,7 +11,7 @@ class Cargo < Formula
   depends_on "pkg-config" => :build
 
   def install
-    system "./configure", "PREFIX=#{prefix}"
+    system "./configure", "--prefix=#{prefix}"
     system "make", "PREFIX=#{prefix}"
     system "make", "PREFIX=#{prefix}", "install"
   end
